@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#app {
+  background-image: linear-gradient(to bottom, rgb(26, 44, 1), rgb(99, 158, 2));
+  flex-grow: 1;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
