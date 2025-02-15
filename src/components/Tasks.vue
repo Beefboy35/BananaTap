@@ -48,7 +48,7 @@ onMounted( async () => {
         <div class="task">
               <h4>Earn your first hundred coins </h4>
             <p v-if="isHundredEarned">✅Completed</p>
-            <p v-else>❌Uncompleted, be on it!</p>
+            <p v-else>❌Not completed, be on it!</p>
         </div>
         <div class="task">
           <h4>Earn thousand coins</h4>

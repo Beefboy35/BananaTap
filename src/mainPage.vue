@@ -69,7 +69,7 @@ const fetchUserName = async () => {
     error.value = null;
     try {
       provide('telegramUserId', telegramUserId.value); // обеспечиваем все дочерние модули этой переменной
-      const response = await axios.get(`${BACKEND_URL}/users/get_user/${telegramUserId.value}`);
+      const response = await axios.get(`https://bananaback-beefboy.amvera.io/users/get_user/${telegramUserId.value}`);
       userName.value = response.data.username || 'Guest';
       coins.value = response.data.coins || 0;
     } catch (error) {

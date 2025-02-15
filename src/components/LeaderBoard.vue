@@ -8,11 +8,11 @@ const closeLeaderBoard = () => {
 const users = ref([]); // Используем ref для массива пользователей
 
 
-const BACKEND_URL = import.meta.env.BACKEND_URL;
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 onMounted(async () => {
   try {
-    const response = await axios.get(`http://localhost:8001/users/get_all_by_coins`); // Используем обратные кавычки для интерполяции
+    const response = await axios.get(`${BACKEND_URL}/users/get_all_by_coins`); // Используем обратные кавычки для интерполяции
     users.value = response.data; // Присваиваем данные к users.value
   } catch (error) {
     console.error("Error acquiring data:", error);
